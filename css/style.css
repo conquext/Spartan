@@ -3,7 +3,6 @@ html {
   font-size: 16px;
   /* scroll-behavior: smooth; */
   scroll-snap-type: y mandatory;
-  scroll-padding: 150px;
 }
 
 header,
@@ -11,6 +10,10 @@ div#contents,
 main,
 #work {
   scroll-snap-align: start;
+}
+
+main {
+  scroll-margin: 200px;
 }
 
 .header {
@@ -193,18 +196,44 @@ ul.social-icons.list-inline {
   margin-top: 22px;
 }
 
+.bg-video {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(100, 180, 160, 1) 35%,
+    rgba(22, 206, 241, 1) 89%,
+    rgba(14, 208, 246, 1) 93%,
+    rgba(6, 210, 251, 1) 97%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+video {
+  min-height: 90vh;
+}
+
+@media (max-width: 900px) {
+  .bg-video {
+    min-height: auto;
+    background: none;
+  }
+  video {
+    height: 90vh;
+  }
+}
+
 .bg-video .social-icons {
   position: absolute;
   list-style: none;
   z-index: 100;
   right: 10px;
-  top: 50px;
+  top: 30px;
   transform: translate(-50%, 50%);
   display: block;
 }
 
 .bg-video .social-icons a {
-  border-radius: 10px;
+  border-radius: 10px !important;
 }
 
 .list-inline > li {
