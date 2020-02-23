@@ -3,10 +3,12 @@ html {
   font-size: 16px;
   /* scroll-behavior: smooth; */
   scroll-snap-type: y mandatory;
+  scroll-padding: 150px;
 }
 
 header,
 div#contents,
+main,
 #work {
   scroll-snap-align: start;
 }
