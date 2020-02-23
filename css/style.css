@@ -12,6 +12,14 @@ main,
   scroll-snap-align: start;
 }
 
+#work {
+  scroll-margin: 125px;
+}
+
+footer {
+  scroll-snap-align: end;
+}
+
 main {
   scroll-margin: 200px;
 }
@@ -531,4 +539,54 @@ p.text-secondary {
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
+}
+
+#footer {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 100%;
+  margin: 0;
+  background: rgba(51, 51, 51, 0.2);
+}
+
+.footer {
+  margin-left: 2rem;
+}
+
+.footer .logo p {
+  width: auto;
+}
+
+.footer .social-icons {
+  display: inline-flex;
+  padding: 0;
+}
+
+.footer .social-icons li {
+  list-style: none;
+  margin: 2px;
+  width: auto;
+  height: 100%;
+  /* line-height: 20px; */
+  font-size: 12px;
+}
+
+.footer .social-icons li:nth-child(1) {
+  padding-left: 10px;
+}
+
+.footer-left-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  width: 70%;
+  justify-content: space-between;
+  /* justify-content: flex-start; */
+}
+
+.footer-left-list li {
+  padding-left: 20px;
+}
+
+.footer ul li {
+  list-style: none;
 }
